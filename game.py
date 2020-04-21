@@ -42,7 +42,7 @@ class Bird():
 		self.v_y += self.g
 		self.v_y = min(self.v_y, 10)
 
-	# Flapping movement
+	# Flapping movement    
 	def flap(self):
 		if self.alive:
 			self.v_y = -10
