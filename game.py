@@ -3,9 +3,6 @@ from pygame.locals import *
 import time
 import random
 
-pygame.init()
-pygame.font.init()
-
 # Bird class
 class Bird():
 	def __init__(self, surface, image, width, height):
@@ -124,6 +121,8 @@ def draw_all(surface, background, background_height, birds, pipes):
 
 # main function
 def main():
+	#initilalize pygame
+	pygame.init()
 	# Defining the screen
 	screen_size = [480, 640]
 	screen = pygame.display.set_mode(screen_size)
